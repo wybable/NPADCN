@@ -1,13 +1,16 @@
 # NPADCN
-This repo is an implementation of [Non-Parameter Attention Guided Deformable Convolution Network for Hyperspectral Image Classification].
+This repo is an implementation of Non-Parameter Attention Guided Deformable Convolution Network(NPADCN) for Hyperspectral Image Classification.
 
 ## Overview
 
-### Architecture of D3Dnet
+### Framework of NPADCN
 <img src="https://raw.github.com/wybable/NPADCN/master/images/NPADCN Framework.png" width="1024"/><br>
 
-### Architecture of D3D
-<img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/D3D.jpg" width="1024"/><br>
+### Architecture of Non-Parameter Attention(NPA)
+<img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/NPA.png" width="1024"/><br>
+
+### Architecture of Non-Parameter Attention Guided Deformable Convolution(NPA-DConv)
+<img src="https://raw.github.com/wybable/NPADCN/master/images/NPA-DConv.png" width="1024"/><br>
 
 ## Requirements
 - Python 3
