@@ -4,7 +4,7 @@ This repo is an implementation of [Non-Parameter Attention Guided Deformable Con
 ## Overview
 
 ### Architecture of D3Dnet
-<img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/Network.jpg" width="512"/><br>
+<img src="https://raw.github.com/wybable/NPADCN/master/images/NPADCN Framework.png" width="512"/><br>
 
 ### Architecture of D3D
 <img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/D3D.jpg" width="1024"/><br>
