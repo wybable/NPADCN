@@ -7,7 +7,7 @@ This repo is an implementation of Non-Parameter Attention Guided Deformable Conv
 <img src="https://raw.github.com/wybable/NPADCN/master/images/NPADCN Framework.png" width="1024"/><br>
 
 ### Architecture of Non-Parameter Attention(NPA)
-<img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/NPA.png" width="1024"/><br>
+<img src="https://raw.github.com/wybable/NPADCN/master/images/NPA.png" width="1024"/><br>
 
 ### Architecture of Non-Parameter Attention Guided Deformable Convolution(NPA-DConv)
 <img src="https://raw.github.com/wybable/NPADCN/master/images/NPA-DConv.png" width="1024"/><br>
@@ -86,19 +86,16 @@ A demo video is available at https://wyqdatabase.s3-us-west-1.amazonaws.com/D3Dn
 
 ## Citiation
 ```
-@article{D3Dnet,
-  author = {Ying, Xinyi and Wang, Longguang and Wang, Yingqian and Sheng, Weidong and An, Wei and Guo, Yulan},
-  title = {Deformable 3D Convolution for Video Super-Resolution},
-  journal = {IEEE Signal Processing Letters},
-  volume = {27},
-  pages = {1500-1504}，
-  year = {2020},
+@article{NPADCN,
+  author = {Wang, Yibo and Zhang, Xia and Qi, Wenchao and Wang, Jinnian and Zhou, Zhi and Yang, Yingpin},
+  title = {Non-Parameter Attention Guided Deformable Convolution Network for Hyperspectral Image Classification},
+  journal = {IEEE Geoscience and Remote Sensing Letters},
 }
 ```
 
 ## Acknowledgement
-This code is built on [[DCNv2]](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch/tree/pytorch_1.0.0) and [[SOF-VSR]](https://github.com/LongguangWang/SOF-VSR). We thank the authors for sharing their codes.
+This code is built on [[D3Dnet]](https://github.com/XinyiYing/D3Dnet). We thank the authors for sharing their codes.
 
 ## Contact
-Please contact us at ***yingxinyi18@nudt.edu.cn*** for any question.
+Please contact us at ***wangyb@gzhu.edu.cn*** for any question.
 
