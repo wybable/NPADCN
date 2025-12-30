@@ -18,33 +18,17 @@ This repo is an implementation of Non-Parameter Attention Guided Deformable Conv
 - numpy, PIL
 - Visual Studio 2015
 
-## Build
-***Compile deformable 3D convolution***: <br>
+## Build [3D Deformable Convolution]
+***Compile deformable convolution***: <br>
 1. Cd to ```code/dcn```.
-2. For Windows users, run  ```cmd make.bat```. For Linux users, run ```bash make.sh```. The scripts will build D3D automatically and create some folders.
+2. For Windows users, run  ```cmd make.bat```. For Linux users, run ```bash make.sh```. The scripts will build 3D deformable convolution automatically and create some folders.
 3. We offer customized settings for any dimension (e.g., Temporal, Height, Width) you want to deform. See ```code/dcn/test.py``` for more details.
 
 ## Datasets
 
 ### Training dataset
 
-1. Download the [Vimeo](http://data.csail.mit.edu/tofu/dataset/vimeo_septuplet.zip) dataset and put the images in `code/data/Vimeo`.  
-2. Cd to `code/data/Vimeo` and run `generate_LR_Vimeo90K.m` to generate training data as below:
-```
-  Vimeo
-    └── sequences
-           ├── 00001
-           ├── 00002
-           ├── ...
-    └── LR_x4
-           ├── 00001
-           ├── 00002
-           ├── ...		
-    ├── readme.txt 
-    ├── sep_trainlist.txt
-    ├── sep_testlist.txt
-    └── generate_LR_Vimeo90K.m      
-```
+Download the [Vimeo](http://data.csail.mit.edu/tofu/dataset/vimeo_septuplet.zip) dataset and put the images in `code/datasets`.  
 
 ### Test dataset
 
