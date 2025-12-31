@@ -1,13 +1,16 @@
 # NPADCN
-This repo is an implementation of [Non-Parameter Attention Guided Deformable Convolution Network for Hyperspectral Image Classification].
+This repo is an implementation of Non-Parameter Attention Guided Deformable Convolution Network(NPADCN) for Hyperspectral Image Classification.
 
 ## Overview
 
-### Architecture of D3Dnet
+### Framework of NPADCN
 <img src="https://raw.github.com/wybable/NPADCN/master/images/NPADCN Framework.png" width="1024"/><br>
 
-### Architecture of D3D
-<img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/D3D.jpg" width="1024"/><br>
+### Architecture of Non-Parameter Attention(NPA)
+<img src="https://raw.github.com/wybable/NPADCN/master/images/NPA.png" width="1024"/><br>
+
+### Architecture of Non-Parameter Attention Guided Deformable Convolution(NPA-DConv)
+<img src="https://raw.github.com/wybable/NPADCN/master/images/NPA-DConv.png" width="1024"/><br>
 
 ## Requirements
 - Python 3
@@ -15,57 +18,16 @@ This repo is an implementation of [Non-Parameter Attention Guided Deformable Con
 - numpy, PIL
 - Visual Studio 2015
 
-## Build
-***Compile deformable 3D convolution***: <br>
+## Build [Deformable 3D Convolution]
+***Compile deformable convolution***: <br>
 1. Cd to ```code/dcn```.
-2. For Windows users, run  ```cmd make.bat```. For Linux users, run ```bash make.sh```. The scripts will build D3D automatically and create some folders.
-3. We offer customized settings for any dimension (e.g., Temporal, Height, Width) you want to deform. See ```code/dcn/test.py``` for more details.
+2. For Windows users, run  ```cmd make.bat```. For Linux users, run ```bash make.sh```. The scripts will build 3D deformable convolution automatically and create some folders.
+3. We offer customized settings for 3d dimension (e.g., Bands, Height, Width). See ```code/dcn/test.py``` for more details.
 
 ## Datasets
 
-### Training dataset
+Download the WHU-Hi-LongKou (LK) dataset(550 × 400, 270 bands, 9 classes) and Pavia University (PU) dataset(610 × 340, 103 bands, 9 classes) in https://pan.baidu.com/s/15or9q9qhJkOLvkd4M4Pk0w?pwd=smi9 (Code: smi9) and extract the datasets to `code/data`.
 
-1. Download the [Vimeo](http://data.csail.mit.edu/tofu/dataset/vimeo_septuplet.zip) dataset and put the images in `code/data/Vimeo`.  
-2. Cd to `code/data/Vimeo` and run `generate_LR_Vimeo90K.m` to generate training data as below:
-```
-  Vimeo
-    └── sequences
-           ├── 00001
-           ├── 00002
-           ├── ...
-    └── LR_x4
-           ├── 00001
-           ├── 00002
-           ├── ...		
-    ├── readme.txt 
-    ├── sep_trainlist.txt
-    ├── sep_testlist.txt
-    └── generate_LR_Vimeo90K.m      
-```
-
-### Test dataset
-
-1. Download the dataset Vid4 and SPMC-11 dataset in https://pan.baidu.com/s/1PKZeTo8HVklHU5Pe26qUtw (Code: 4l5r) and put the folder in `code/data`.
-2. (optional) You can also download Vid4 and SPMC-11 or other video datasets and prepare test data in `code/data` as below:
-```
- data
-  └── dataset_1
-         └── scene_1
-               └── hr    
-                  ├── hr_01.png  
-                  ├── hr_02.png  
-                  ├── ...
-                  └── hr_M.png    
-               └── lr_x4
-                  ├── lr_01.png  
-                  ├── lr_02.png  
-                  ├── ...
-                  └── lr_M.png   
-         ├── ...		  
-         └── scene_M
-  ├── ...    
-  └── dataset_N      
-```
 ## Results
 
 ### Quantitative Results
@@ -83,19 +45,16 @@ A demo video is available at https://wyqdatabase.s3-us-west-1.amazonaws.com/D3Dn
 
 ## Citiation
 ```
-@article{D3Dnet,
-  author = {Ying, Xinyi and Wang, Longguang and Wang, Yingqian and Sheng, Weidong and An, Wei and Guo, Yulan},
-  title = {Deformable 3D Convolution for Video Super-Resolution},
-  journal = {IEEE Signal Processing Letters},
-  volume = {27},
-  pages = {1500-1504}，
-  year = {2020},
+@article{NPADCN,
+  author = {Wang, Yibo and Zhang, Xia and Qi, Wenchao and Wang, Jinnian and Zhou, Zhi and Yang, Yingpin},
+  title = {Non-Parameter Attention Guided Deformable Convolution Network for Hyperspectral Image Classification},
+  journal = {IEEE Geoscience and Remote Sensing Letters},
 }
 ```
 
 ## Acknowledgement
-This code is built on [[DCNv2]](https://github.com/chengdazhi/Deformable-Convolution-V2-PyTorch/tree/pytorch_1.0.0) and [[SOF-VSR]](https://github.com/LongguangWang/SOF-VSR). We thank the authors for sharing their codes.
+This code is built on [[D3Dnet]](https://github.com/XinyiYing/D3Dnet). We thank the authors for sharing their codes.
 
 ## Contact
-Please contact us at ***yingxinyi18@nudt.edu.cn*** for any question.
+Please contact us at ***wangyb@gzhu.edu.cn*** for any question.
 
