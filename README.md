@@ -18,41 +18,16 @@ This repo is an implementation of Non-Parameter Attention Guided Deformable Conv
 - numpy, PIL
 - Visual Studio 2015
 
-## Build [3D Deformable Convolution]
+## Build [Deformable 3D Convolution]
 ***Compile deformable convolution***: <br>
 1. Cd to ```code/dcn```.
 2. For Windows users, run  ```cmd make.bat```. For Linux users, run ```bash make.sh```. The scripts will build 3D deformable convolution automatically and create some folders.
-3. We offer customized settings for any dimension (e.g., Temporal, Height, Width) you want to deform. See ```code/dcn/test.py``` for more details.
+3. We offer customized settings for 3d dimension (e.g., Bands, Height, Width). See ```code/dcn/test.py``` for more details.
 
 ## Datasets
 
-### Training dataset
+Download the WHU-Hi-LongKou (LK) dataset(550 × 400, 270 bands, 9 classes) and Pavia University (PU) dataset(610 × 340, 103 bands, 9 classes) in https://pan.baidu.com/s/15or9q9qhJkOLvkd4M4Pk0w?pwd=smi9 (Code: smi9) and extract the datasets to `code/data`.
 
-Download the [Vimeo](http://data.csail.mit.edu/tofu/dataset/vimeo_septuplet.zip) dataset and put the images in `code/datasets`.  
-
-### Test dataset
-
-1. Download the dataset Vid4 and SPMC-11 dataset in https://pan.baidu.com/s/1PKZeTo8HVklHU5Pe26qUtw (Code: 4l5r) and put the folder in `code/data`.
-2. (optional) You can also download Vid4 and SPMC-11 or other video datasets and prepare test data in `code/data` as below:
-```
- data
-  └── dataset_1
-         └── scene_1
-               └── hr    
-                  ├── hr_01.png  
-                  ├── hr_02.png  
-                  ├── ...
-                  └── hr_M.png    
-               └── lr_x4
-                  ├── lr_01.png  
-                  ├── lr_02.png  
-                  ├── ...
-                  └── lr_M.png   
-         ├── ...		  
-         └── scene_M
-  ├── ...    
-  └── dataset_N      
-```
 ## Results
 
 ### Quantitative Results
