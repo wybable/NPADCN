@@ -26,13 +26,14 @@ This repo is an implementation of Non-Parameter Attention Guided Deformable Conv
 
 ## Datasets
 
-Download the WHU-Hi-LongKou (LK) dataset(550 × 400, 270 bands, 9 classes) and Pavia University (PU) dataset(610 × 340, 103 bands, 9 classes) in https://pan.baidu.com/s/15or9q9qhJkOLvkd4M4Pk0w?pwd=smi9 (Code: smi9) and extract the datasets to `code/data`.
+Download the **WHU-Hi-LongKou** (LK) dataset(550 × 400, 270 bands, 9 classes) and **Pavia University** (PU) dataset(610 × 340, 103 bands, 9 classes) in https://pan.baidu.com/s/15or9q9qhJkOLvkd4M4Pk0w?pwd=smi9 (Code: smi9) and extract the datasets to `code/data`.
 
 ## Results
 
 ### Quantitative Results
 
 <img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/table1.JPG" width="1024" />
+
 
 <img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/table2.JPG" width="550"/>
 
