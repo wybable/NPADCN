@@ -26,22 +26,28 @@ This repo is an implementation of Non-Parameter Attention Guided Deformable Conv
 
 ## Datasets
 
-Download the WHU-Hi-LongKou (LK) dataset(550 × 400, 270 bands, 9 classes) and Pavia University (PU) dataset(610 × 340, 103 bands, 9 classes) in https://pan.baidu.com/s/15or9q9qhJkOLvkd4M4Pk0w?pwd=smi9 (Code: smi9) and extract the datasets to `code/data`.
+Download the **WHU-Hi-LongKou** (LK) dataset(550 × 400, 270 bands, 9 classes) and **Pavia University** (PU) dataset(610 × 340, 103 bands, 9 classes) in https://pan.baidu.com/s/15or9q9qhJkOLvkd4M4Pk0w?pwd=smi9 (Code: smi9) and extract the datasets to `code/data`.
 
 ## Results
 
 ### Quantitative Results
 
-<img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/table1.JPG" width="1024" />
+<img src="https://raw.github.com/wybable/NPADCN/master/images/Table1.png" width="1024"/><br>
 
-<img src="https://raw.github.com/XinyiYing/D3Dnet/master/images/table2.JPG" width="550"/>
+The quantitative statistics of classification results are delineated in **Table I**, where the proposed NPADCN exhibits superior performance across all three public datasets. Using the OA of LK dataset as an illustration, the NPADCN (99.72%) demonstrated notable enhancements compared to the CNN-based CLOLN (99.38%), Attention-based DBDA (99.45%), Transformer-based GLMGT (99.38%), and Deformable Convolution-based DHCN (99.08%) and the recent SClusterFormer (98.31%), showcasing improvements of 0.34%, 0.27%, 0.34%, 0.64%, and 1.41%, respectively. 
 
-We have organized the Matlab code framework of Video Quality Assessment metric T-MOVIE and MOVIE. [<a href="https://github.com/XinyiYing/MOVIE">Code</a>] <br> Welcome to have a look and use our code.
+<img src="https://raw.github.com/wybable/NPADCN/master/images/Table2.png" width="1024"/>
+
+**Table II** illustrates the accuracy and computational complexity of the ablation models. NPADCN consistently outperforms both the baseline and other attention-guided variants (e.g., DAM and CBAM) across all datasets. Notably, this superior performance is achieved with high efficiency; compared to Baseline-DCN, NPADCN introduces no additional parameters and only a negligible increase in computation time. This demonstrates that NPA-DConv effectively enhances feature extraction without compromising computational efficiency.
+
+<img src="https://raw.github.com/wybable/NPADCN/master/images/Table3.png" width="1024"/>
+
+**Table III** presents the ablation study analyzing the contribution of individual branches. Among dual-branch configurations, the combination of ASpeFE and ASpaFE consistently yields higher accuracy, underscoring the importance of leveraging both spectral and spatial information. Ultimately, the complete NPADCN model integrates all three branches to achieve the highest accuracy across all datasets, confirming the essential contribution of each module to the joint feature extraction.
 
 ### Qualitative Results
-<img src=https://raw.github.com/XinyiYing/D3Dnet/master/images/compare.jpg>
+<img src="https://raw.github.com/wybable/NPADCN/master/images/Fig.png" width="1024"/>
 
-A demo video is available at https://wyqdatabase.s3-us-west-1.amazonaws.com/D3Dnet.mp4
+Fig.4 depicts the corresponding classification maps for the LK dataset. It can be seen that the proposed NPADCN model produces the most visually superior classification map with minimal discrete noise, particularly in the edge region.
 
 ## Citiation
 ```
