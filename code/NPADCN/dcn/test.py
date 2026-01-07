@@ -8,8 +8,8 @@ import torch
 import torch.nn as nn
 from torch.autograd import gradcheck
 
-from modules.deform_conv import DeformConv, _DeformConv, DeformConvPack
-from modules.deform_conv import DeformConv_d, _DeformConv, DeformConvPack_d
+from dcn.modules.deform_conv import DeformConv, _DeformConv, DeformConvPack
+from dcn.modules.deform_conv import DeformConv_d, _DeformConv, DeformConvPack_d
 
 deformable_groups = 1
 B, inC, inT, inH, inW = 2, 8, 16, 16, 16
@@ -84,8 +84,8 @@ if __name__ == '__main__':
     print('==================Deformable 3D convolution==================', '\n')
     # D3D deform in three dimensions
     print('=============D3D deform in three dimensions===========')
-    example_dconv()  # DCN using its own offsets
-    example_dconv_offset()  # DCN using extra offsets
+    example_dconv() # DCN using its own offsets
+    example_dconv_offset() # DCN using extra offsets
     print('\n')
 
     # D3D available for deformable dimension
