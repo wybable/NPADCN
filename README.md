@@ -20,13 +20,13 @@ This repo is an implementation of Non-Parameter Attention Guided Deformable Conv
 
 ## Build [Deformable 3D Convolution]
 ***Compile deformable convolution***: <br>
-1. Cd to ```code/dcn```.
+1. Cd to ```code/NPADCN/dcn```.
 2. For Windows users, run  ```cmd make.bat```. For Linux users, run ```bash make.sh```. The scripts will build 3D deformable convolution automatically and create some folders.
-3. We offer customized settings for 3d dimension (e.g., Bands, Height, Width). See ```code/dcn/test.py``` for more details.
+3. We offer customized settings for 3d dimension (e.g., Bands, Height, Width). See ```code/NPADCN/dcn/test.py``` for more details.
 
 ## Datasets
 
-Download the **WHU-Hi-LongKou** (LK) dataset(550 × 400, 270 bands, 9 classes) and **Pavia University** (PU) dataset(610 × 340, 103 bands, 9 classes) in https://pan.baidu.com/s/15or9q9qhJkOLvkd4M4Pk0w?pwd=smi9 (Code: smi9) and extract the datasets to `code/data`.
+Download the **WHU-Hi-LongKou** (LK) dataset(550 × 400, 270 bands, 9 classes) and **Pavia University** (PU) dataset(610 × 340, 103 bands, 9 classes) in https://pan.baidu.com/s/15or9q9qhJkOLvkd4M4Pk0w?pwd=smi9 (Code: smi9) and extract the datasets to `code/datasets`.
 
 ## Results
 
